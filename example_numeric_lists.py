@@ -1,5 +1,5 @@
 """
-
+Name: Levi Lowther
 Examples of numeric lists
 
 VS Code Menu / View / Command Palette / Python Interpretor
@@ -81,13 +81,16 @@ yvalues_list = [2, 5, 8, 20, 21, 23, 24, 27, 30, 31, 31, 32]
 mean = statistics.mean(score_list)
 median = statistics.median(score_list)
 mode = statistics.mode(score_list)
-
+print(f"the mean is {mean}")
+print(f"the median is {median}")
+print(f"the mode is {mode}")
 # Descriptive: Measures of spread
 # Get standard deviation and variance for a values list
 
 stdev = statistics.stdev(score_list)
 variance = statistics.variance(score_list)
-
+print(f"the standard deviation is {stdev}")
+print(f"the variance is {variance}")
 # Descriptive: Measures of correlation
 # Use two numerical lists of the same size
 # Use statisttics module to get correlation between list1 and list2
@@ -172,6 +175,7 @@ copy(): Return a shallow copy of the list.
 # append an item to the end of the list
 lst = [1, 2, 3]
 lst.append(4)
+print(score_list)
 
 # extend the list with another list
 lst.extend([4, 5, 6])
@@ -223,7 +227,7 @@ print(new_scores)
 # Say "keep x such that x > 100 is True" given new_scores
 # Cast the result using square brackets to get a list
 scores_over_100 = [filter(lambda x: x > 100, new_scores)]
-
+print(f"HERE {scores_over_100}")
 # Use the built-in function map() anywhere you need to transfrom
 
 # Map each element to its square
@@ -234,7 +238,7 @@ doubled_scores = [map(lambda x: x * 2, new_scores)]
 # Map each element to its square root
 # Say "map x to the square root of x" and cast to a list
 sqrt_scores = map(lambda x: math.sqrt(x), new_scores)
-
+print(sqrt_scores)
 # Map each element (radius) to its area
 radius_list = [1, 2, 3, 4, 5]
 # Say "map r to pi r squared" and cast to a list
